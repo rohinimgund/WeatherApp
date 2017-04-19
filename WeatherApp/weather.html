@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+	<title>Weather Web Application</title>
+  </head>
+  <body>
+  <div class="background"></div>
+  <!-- 
+  onload="initialize();" -->
+    <form>
+    <table>
+    <tr>
+       <td><input type="text" id="form-input"/ placeholder="City"></td>
+       <td><input type="button" onclick="sendRequest();" value="Weather Details"/></td>
+       </tr>
+       </table>
+    </form>
+
+    <table>
+      <tr>
+        <th>Details of weather in </th>
+        <th><div id="city"></div></th>
+        <th colspan="2"><div id="desc"></div></th>
+      </tr>
+      <tr>
+        <td>Longitude: </td>
+        <td><div id="geoLon"></div></td>
+        <td>Latitude: </td>
+        <td><div id="geoLat"></div></td>
+      </tr>
+  
+      <tr>
+        <td>Sunrise: </td>
+        <td><div id="sunrise"></div></td>
+        <td>Sunset: </td>
+        <td><div id="sunset"></div></td>
+      </tr>
+
+      <tr>
+        <td>Pressure: </td>
+        <td><div id="pressure"></div></td>
+        <td>Humidity: </td>
+        <td><div id="humidity"></div></td>
+      </tr>
+	  <tr>
+        <td>Tempurature: </td>
+        <td><div id="temperature"></div></td>
+      </tr>
+      <tr> 
+	  <td>Min Tempurature: </td>
+        <td><div id="min_temp"></div></td>
+        <td> Max Tempurature: </td>
+        <td><div id="max_temp"></div></td>
+      </tr>
+      <tr>
+        <td>Visibility: </td>
+        <td><div id="visible"></div></td>
+        <td>Cloudiness: </td>
+        <td><div id="cloud"></div></td>
+      </tr>
+      <tr>
+        <td><div>Please Note: </div></td>
+        <td colspan="3"><div id="info"></div></td>
+      </tr>
+
+    </table>
+    
+  </body>
+</html>
